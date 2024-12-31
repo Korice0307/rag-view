@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BarChart from "../../EChart/barChart";
-import ChartObj from '../../EChart/ChartObj';
-import PieChart from "../../EChart/PieChart";
+import BarChart from "../../EChart/bar-chart";
+import ChartObj from '../../EChart/kg-chart';
+import PieChart from "../../EChart/pie-chart";
 
 function ResultPage() {
     return (
