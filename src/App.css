@@ -25,6 +25,7 @@
 }
 
 .App-link {
+  display: flex;
   color: #61dafb;
 }
 
