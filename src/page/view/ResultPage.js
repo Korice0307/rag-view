@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BarChart from '../../EChart/BarChart';
+import BarChart from "../../EChart/barChart";
 import ChartObj from '../../EChart/ChartObj';
+import PieChart from "../../EChart/PieChart";
 
 function ResultPage() {
     return (
         <div>
-            <ChartObj/>
-            <BarChart/>
             <Link to="/">Go back to Home Page</Link>
+            <ChartObj />
+            <BarChart />
+            <PieChart />
+            
         </div>
     );
 }
