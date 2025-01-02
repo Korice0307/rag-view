@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import ReactECharts from "echarts-for-react";
 import axios from "axios";
+import { data } from "react-router-dom";
 
-function ChartObj({ url }) {
+export const useChartObj = (url) => {
   const [graphData, setGraphData] = useState([]);
   const [graphLinks, setGraphLinks] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -122,7 +122,5 @@ function ChartObj({ url }) {
     ],
   };
 
-  return <ReactECharts option={option} style={{ height: 600, width: "100%" }} />;
+  return { option };
 }
-
-export default ChartObj;

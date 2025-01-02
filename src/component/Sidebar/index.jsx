@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../style/Sidebar.css'
+import './index.css'
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <h3>列表</h3>
             <ul>
-                <li><Link to="/ResultPage">範例</Link></li>
+                <li><Link to="/ExamplePage">範例</Link></li>
                 <li><Link to="/View202">RAG202</Link></li>
                 <li><Link to="/View203">RAG203</Link></li>
                 <li><Link to="/View204">RAG204</Link></li>

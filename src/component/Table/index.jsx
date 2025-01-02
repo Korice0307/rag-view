@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/Table.css'
+import './index.css'
 
 function TableComponent({ data }) {
 
