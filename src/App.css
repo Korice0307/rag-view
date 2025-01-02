@@ -9,6 +9,14 @@
   background-color: #f0f0f0;
   padding: 20px;
   border-right: 1px solid #ccc;
+
+  .backhome {
+    bottom: 0%;
+    width: 40px;
+    height: 40px;
+    border: #333;
+    border-radius: 10px;
+  }
 }
 
 .content {
@@ -34,12 +42,4 @@
 
 .sidebar ul li a:hover {
   text-decoration: underline;
-}
-
-.backhome{
-  bottom: 100%;
-  width: 40px;
-  height: 40px;
-  border: #333;
-  border-radius: 10px;
 }

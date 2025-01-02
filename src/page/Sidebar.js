@@ -7,7 +7,7 @@ const Sidebar = () => {
             <h3>列表</h3>
             <ul>
                 <li><Link to="/ResultPage">页面 1</Link></li>
-                <li><Link to="/testView"></Link>測試</li>
+                <li><Link to="/testView">測試</Link></li>
             </ul>
             <div className='backhome'><Link to="/">回到主畫面</Link></div>
         </div>
