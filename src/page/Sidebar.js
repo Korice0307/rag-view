@@ -6,7 +6,7 @@ const Sidebar = () => {
         <div className="sidebar">
             <h3>列表</h3>
             <ul>
-                <li><Link to="/ResultPage">页面 1</Link></li>
+                <li><Link to="/ResultPage">範例</Link></li>
                 <li><Link to="/View202">RAG202</Link></li>
                 <li><Link to="/View203">RAG203</Link></li>
                 <li><Link to="/View204">RAG204</Link></li>
