@@ -1,5 +1,6 @@
 import React from "react";
-import TreeChartComponent from '../../common/TreeChart';
+// import TreeChartComponent from '../../common/TreeChart';
+import ChartObj from '../../common/kg-chart';
 import TableComponent from "../../common/Table";
 
 function ResultPage() {
@@ -47,7 +48,7 @@ function ResultPage() {
     return (
         <div>
             <TableComponent data={tableData} />
-            <TreeChartComponent data={data} />
+            <ChartObj />
         </div>
     );
 }
