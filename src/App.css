@@ -5,45 +5,17 @@
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
   background-color: #f0f0f0;
   padding: 20px;
-  border-right: 1px solid #ccc;
-
-  .backhome {
-    bottom: 0%;
-    width: 40px;
-    height: 40px;
-    border: #333;
-    border-radius: 10px;
-  }
+  border: 1px solid #ccc; /* 添加外框 */
 }
 
 .content {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
-}
-
-/* src/components/Sidebar.css */
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
-}
-
-.sidebar ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.sidebar ul li a:hover {
-  text-decoration: underline;
-}
-
-.mainText{
-  margin-left: 200px;
 }

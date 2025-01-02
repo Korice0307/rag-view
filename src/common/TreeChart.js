@@ -21,14 +21,14 @@ const setItemStyle = (node) => {
   node.itemStyle = {
     color: color
   };
-  
+
   if (node.children) {
     node.children.forEach(setItemStyle);
   }
 };
 
 function TreeChartComponent({ data }) {
-  // 設置每個節點的顏色
+
   setItemStyle(data);
 
   const option = {
@@ -62,10 +62,9 @@ function TreeChartComponent({ data }) {
   };
 
   return (
-    <ReactECharts
-      option={option}
-      style={{ height: "400px", width: "100%" }}
-    />
+    <div style={{ border: '2px solid #000', padding: '10px' }}>
+      <ReactECharts option={option} style={{ height: '400px', width: '100%' }} />
+    </div>
   );
 }
 

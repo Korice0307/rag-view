@@ -1,8 +1,15 @@
 import React from "react";
-import TreeChartComponent from '../../EChart/TreeChart';
+import TreeChartComponent from '../../common/TreeChart';
+import TableComponent from "../../common/Table";
 
 function ResultPage() {
-    
+
+    const tableData = [
+        { id: 203, name: '***', score: 90 },
+        { id: 204, name: '***', score: 85 },
+        { id: 304, name: '***', score: 92 },
+    ]
+
     const data = {
         name: 'ESG 永續發展',
         children: [
@@ -39,6 +46,7 @@ function ResultPage() {
 
     return (
         <div>
+            <TableComponent data={tableData} />
             <TreeChartComponent data={data} />
         </div>
     );
