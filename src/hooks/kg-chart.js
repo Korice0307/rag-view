@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { data } from "react-router-dom";
 
-export const useChartObj = (url) => {
+export const useChartObj = (url,titleName) => {
   const [graphData, setGraphData] = useState([]);
   const [graphLinks, setGraphLinks] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -23,7 +22,7 @@ export const useChartObj = (url) => {
       const processedNodes = nodes.map((node) => {
         const degree = nodeDegree[node.name] || 0;
         const size = getNodeSize(degree);
-        const color = getColorByValue(node.value);
+        const color = getColorByCategory(node.category);
         return { ...node, itemStyle: { color }, symbolSize: size };
       });
 
@@ -44,11 +43,29 @@ export const useChartObj = (url) => {
     return Math.min(80, degree * 10 + 20); // 最小大小為 20，最大為 80
   };
 
-  const getColorByValue = (value) => {
-    if (value >= 40) return "#ff4500"; // 深橙色
-    if (value >= 30) return "#ffa500"; // 橙色
-    if (value >= 20) return "#ffd700"; // 金色
-    return "#87cefa"; // 淡藍色
+  const getColorByCategory = (category) => {
+    const categoryMap = {
+      "Energy (302)": "#ff7f50",
+      "Internal Energy Consumption": "#87cefa",
+      "External Energy Consumption": "#da70d6",
+      "Energy Intensity": "#32cd32",
+      "Energy Reduction": "#4682b4",
+      "Product/Service Energy Demand Reduction": "#8a2be2",
+      "Category": "#ffd700",
+      "Consumption": "#40e0d0",
+      "Reduction": "#ff6347",
+      "Intensity": "#8b0000",
+      "Non-Renewable Energy (Internal)": "#ffa07a",
+      "Renewable Energy (Internal)": "#7fff00",
+      "Electricity (Internal)": "#dc143c",
+      "Transportation (External)": "#00ced1",
+      "Product Lifecycle (External)": "#4682b4",
+      "Service Intensity": "#6a5acd",
+      "Product Intensity": "#ff4500",
+      "Reduction Initiatives": "#2e8b57",
+      "Efficiency": "#b8860b",
+    };
+    return categoryMap[category] || "#cccccc"; // 默認顏色
   };
 
   const getCategoryColor = (category) => {
@@ -78,7 +95,7 @@ export const useChartObj = (url) => {
 
   const option = {
     title: {
-      text: "Knowledge Graph Example",
+      text: titleName,
       left: "center",
     },
     tooltip: {
@@ -123,4 +140,4 @@ export const useChartObj = (url) => {
   };
 
   return { option };
-}
+};

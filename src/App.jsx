@@ -3,12 +3,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import HomePage from './view/HomePage';
 import ExamplePage from './view/ExamplePage';
 import Sidebar from './component/Sidebar';
-// import View202 from './view/view/View202';
-// import View203 from './view/view/View203';
-// import View204 from './view/view/View204';
-// import View303 from './view/view/View303';
-// import View304 from './view/view/View304';
-// import View305 from './view/view/View305';
+import GRI200 from './view/GRI/GRI200';
+import GRI300 from './view/GRI/GRI300';
+import GRI400 from './view/GRI/GRI400';
 
 function App() {
   return (
@@ -18,13 +15,9 @@ function App() {
         <div className='content'>
           <Routes>
             <Route path="/" element={<HomePage />} />
-           <Route path="/ExamplePage" element={<ExamplePage />} />
-            {/* <Route path="/View202" element={< View202/>} />
-            <Route path="/View203" element={< View203/>} />
-            <Route path="/View204" element={< View204/>} />
-            <Route path="/View303" element={< View303/>} />
-            <Route path="/View304" element={< View304/>} />
-            <Route path="/View305" element={< View305/>} />  */}
+            <Route path="/GRI200" element={<GRI200 />} />
+            <Route path="/GRI300" element={<GRI300 />} />
+            <Route path="/GRI400" element={<GRI400 />} />
           </Routes>
         </div>
       </div>

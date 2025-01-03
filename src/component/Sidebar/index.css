@@ -1,59 +1,86 @@
 /* src/style/Sidebar.css */
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 200px;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border: 1px solid #ccc; /* 添加外框 */
-  }
-  
-  .sidebar h3 {
-    margin-bottom: 20px;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin: 10px 0;
-  }
-  
-  .sidebar ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    background-color: #ddd;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  .sidebar ul li a:hover {
-    background-color: #bbb;
-    border-color: #999;
-  }
-  
-  .backhome {
-    margin-top: auto;
-    padding: 10px;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-  }
-  
-  .backhome a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .backhome a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc; /* 添加外框 */
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.sidebar ul li a:hover {
+  background-color: #bbb;
+  border-color: #999;
+}
+
+/* Hide Button */
+.toggle-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.dropdown li {
+  margin: 5px 0;
+}
+
+.backhome {
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.backhome a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.backhome a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
