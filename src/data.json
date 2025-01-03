@@ -1,0 +1,1617 @@
+{
+    "nodes":[
+        {
+            "id": "0",
+            "name": "302-1",
+            "symbolSize": 19.12381,
+            "x": -266.82776,
+            "y": 299.6904,
+            "value": 20,
+            "category": 0
+        },
+        {
+            "id": "1",
+            "name": "再生能源消耗",
+            "symbolSize": 2.66666666666667,
+            "x": -418.08344,
+            "y": 446.8853,
+            "value": 20,
+            "category": 0
+        },
+        {
+            "id": "2",
+            "name": "購買能源消耗",
+            "symbolSize": 6.32380933333333,
+            "x": -212.76357,
+            "y": 245.29176,
+            "value": 10,
+            "category": 1
+        },
+        {
+            "id": "3",
+            "name": "出售能源",
+            "symbolSize": 6.32380933333333,
+            "x": -242.82404,
+            "y": 235.26283,
+            "value": 10,
+            "category": 1
+        },
+        {
+            "id": "4",
+            "name": "上游能源消耗",
+            "symbolSize": 2.66666666666667,
+            "x": -379.30386,
+            "y": 429.06424,
+            "value": 15,
+            "category": 0
+        },
+        {
+            "id": "5",
+            "name": "下游能源消耗",
+            "symbolSize": 2.66666666666667,
+            "x": -417.26337,
+            "y": 406.03506,
+            "value": 15,
+            "category": 0
+        },
+        {
+            "id": "6",
+            "name": "產品能源密集度",
+            "symbolSize": 2.66666666666667,
+            "x": -332.6012,
+            "y": 485.16974,
+            "value": 10,
+            "category": 0
+        },
+        {
+            "id": "7",
+            "name": "服務能源密集度",
+            "symbolSize": 2.66666666666667,
+            "x": -382.69568,
+            "y": 475.09113,
+            "value": 10,
+            "category": 0
+        },
+        {
+            "id": "8",
+            "name": "銷售能源密集度",
+            "symbolSize": 2.66666666666667,
+            "x": -320.384,
+            "y": 387.17325,
+            "value": 10,
+            "category": 0
+        },
+        {
+            "id": "9",
+            "name": "節能專案減量",
+            "symbolSize": 2.66666666666667,
+            "x": -344.39832,
+            "y": 451.16772,
+            "value": 30,
+            "category": 0
+        },
+        {
+            "id": "10",
+            "name": "302",
+            "symbolSize": 66.6666666666667,
+            "x": -89.34107,
+            "y": 234.56128,
+            "value": 20,
+            "category": 1
+        },
+        {
+            "id": "11",
+            "name": "流程重新設計",
+            "symbolSize": 4.49523933333333,
+            "x": -339.77908,
+            "y": -184.69139,
+            "value": 20,
+            "category": 1
+        },
+        {
+            "id": "12",
+            "name": "產品使用節能",
+            "symbolSize": 2.66666666666667,
+            "x": -194.31313,
+            "y": 178.55301,
+            "value": 20,
+            "category": 1
+        },
+        {
+            "id": "13",
+            "name": "產品能源消耗模式",
+            "symbolSize": 2.66666666666667,
+            "x": -158.05168,
+            "y": 201.99768,
+            "value": 15,
+            "category": 1
+        },
+        {
+            "id": "14",
+            "name": "水取用影響",
+            "symbolSize": 2.66666666666667,
+            "x": -127.701546,
+            "y": 242.55057,
+            "value": 20,
+            "category": 1
+        },
+        {
+            "id": "15",
+            "name": "水消耗影響",
+            "symbolSize": 17.2952373333333,
+            "x": -385.2226,
+            "y": -393.5572,
+            "value": 20,
+            "category": 2
+        },
+        {
+            "id": "16",
+            "name": "水排放影響",
+            "symbolSize": 13.6380973333333,
+            "x": -516.55884,
+            "y": -393.98975,
+            "value": 20,
+            "category": 2
+        },
+        {
+            "id": "17",
+            "name": "地表水取用量",
+            "symbolSize": 13.6380973333333,
+            "x": -464.79382,
+            "y": -493.57944,
+            "value": 15,
+            "category": 2
+        },
+        {
+            "id": "18",
+            "name": "地下水取用量",
+            "symbolSize": 13.6380973333333,
+            "x": -515.1624,
+            "y": -456.9891,
+            "value": 15,
+            "category": 2
+        },
+        {
+            "id": "19",
+            "name": "淡水排放量",
+            "symbolSize": 13.6380973333333,
+            "x": -408.12122,
+            "y": -464.5048,
+            "value": 10,
+            "category": 2
+        },
+        {
+            "id": "20",
+            "name": "其他水排放量",
+            "symbolSize": 13.6380973333333,
+            "x": -456.44113,
+            "y": -425.13303,
+            "value": 10,
+            "category": 2
+        },
+        {
+            "id": "21",
+            "name": "直接溫室氣體排放",
+            "symbolSize": 13.6380973333333,
+            "x": -459.1107,
+            "y": -362.5133,
+            "value": 30,
+            "category": 2
+        },
+        {
+            "id": "22",
+            "name": "能源間接溫室氣體排放",
+            "symbolSize": 28.2666666666667,
+            "x": -313.42786,
+            "y": -289.44803,
+            "value": 30,
+            "category": 2
+        },
+        {
+            "id": "23",
+            "name": "其他間接溫室氣體排放",
+            "symbolSize": 20.9523826666667,
+            "x": 4.6313396,
+            "y": -273.8517,
+            "value": 20,
+            "category": 7
+        },
+        {
+            "id": "24",
+            "name": "排放強度",
+            "symbolSize": 30.0952353333333,
+            "x": 82.80825,
+            "y": -203.1144,
+            "value": 20,
+            "category": 7
+        },
+        {
+            "id": "25",
+            "name": "溫室氣體減量措施",
+            "symbolSize": 20.9523826666667,
+            "x": 78.64646,
+            "y": -31.512747,
+            "value": 40,
+            "category": 6
+        },
+        {
+            "id": "26",
+            "name": "臭氧層破壞物質",
+            "symbolSize": 31.9238066666667,
+            "x": -81.46074,
+            "y": -204.20204,
+            "value": 10,
+            "category": 7
+        },
+        {
+            "id": "27",
+            "name": "氮氧化物排放",
+            "symbolSize": 8.152382,
+            "x": -225.73984,
+            "y": 82.41631,
+            "value": 10,
+            "category": 4
+        },
+        {
+            "id": "28",
+            "name": "硫氧化物排放",
+            "symbolSize": 15.4666666666667,
+            "x": -385.6842,
+            "y": -20.206686,
+            "value": 10,
+            "category": 3
+        },
+        {
+            "id": "29",
+            "name": "廢棄物管理流程",
+            "symbolSize": 4.49523933333333,
+            "x": -403.92447,
+            "y": -197.69823,
+            "value": 20,
+            "category": 2
+        },
+        {
+            "id": "30",
+            "name": "廢水處理影響",
+            "symbolSize": 9.478207,
+            "x": -158.2019,
+            "y": -312.1345,
+            "value": 15,
+            "category": 2
+        },
+        {
+            "id": "31",
+            "name": "生物多樣性保護",
+            "symbolSize": 10.456921,
+            "x": -200.7846,
+            "y": -287.3124,
+            "value": 20,
+            "category": 3
+        },
+        {
+            "id": "32",
+            "name": "碳足跡",
+            "symbolSize": 18.542345,
+            "x": -313.4738,
+            "y": -368.905,
+            "value": 25,
+            "category": 2
+        },
+        {
+            "id": "33",
+            "name": "能源效率改善",
+            "symbolSize": 21.376739,
+            "x": -350.8275,
+            "y": -220.4321,
+            "value": 30,
+            "category": 1
+        },
+        {
+            "id": "34",
+            "name": "資源回收率",
+            "symbolSize": 12.366283,
+            "x": -180.9282,
+            "y": -140.655,
+            "value": 15,
+            "category": 4
+        },
+        {
+            "id": "35",
+            "name": "零排放政策",
+            "symbolSize": 8.953659,
+            "x": -262.094,
+            "y": 116.5225,
+            "value": 20,
+            "category": 7
+        },
+        {
+            "id": "36",
+            "name": "員工工作安全",
+            "symbolSize": 7.443821,
+            "x": -131.8875,
+            "y": 25.2635,
+            "value": 10,
+            "category": 5
+        },
+        {
+            "id": "37",
+            "name": "勞動權益保障",
+            "symbolSize": 6.227584,
+            "x": -79.1923,
+            "y": -47.3846,
+            "value": 15,
+            "category": 5
+        },
+        {
+            "id": "38",
+            "name": "社會責任投資",
+            "symbolSize": 8.234561,
+            "x": -303.7569,
+            "y": 52.2479,
+            "value": 20,
+            "category": 6
+        },
+        {
+            "id": "39",
+            "name": "公平貿易實踐",
+            "symbolSize": 13.789534,
+            "x": -456.3984,
+            "y": 101.508,
+            "value": 25,
+            "category": 6
+        },
+        {
+            "id": "40",
+            "name": "勞動力多元化",
+            "symbolSize": 9.101534,
+            "x": -507.2345,
+            "y": 142.945,
+            "value": 20,
+            "category": 5
+        },
+        {
+            "id": "41",
+            "name": "綠色建築",
+            "symbolSize": 14.738224,
+            "x": 205.7123,
+            "y": -512.8237,
+            "value": 15,
+            "category": 1
+        },
+        {
+            "id": "42",
+            "name": "水資源效率",
+            "symbolSize": 12.623538,
+            "x": -72.8813,
+            "y": -293.2215,
+            "value": 18,
+            "category": 2
+        },
+        {
+            "id": "43",
+            "name": "生態友善產品",
+            "symbolSize": 10.219345,
+            "x": -40.4959,
+            "y": -237.6672,
+            "value": 20,
+            "category": 7
+        },
+        {
+            "id": "44",
+            "name": "再生能源比重",
+            "symbolSize": 16.366931,
+            "x": 170.945,
+            "y": -181.6224,
+            "value": 25,
+            "category": 0
+        },
+        {
+            "id": "45",
+            "name": "水資源保護",
+            "symbolSize": 13.752124,
+            "x": 100.2874,
+            "y": -173.4521,
+            "value": 22,
+            "category": 2
+        },
+        {
+            "id": "46",
+            "name": "社會公益項目",
+            "symbolSize": 15.943745,
+            "x": 24.8795,
+            "y": -323.9181,
+            "value": 20,
+            "category": 6
+        },
+        {
+            "id": "47",
+            "name": "有機農業支持",
+            "symbolSize": 12.184234,
+            "x": 147.3921,
+            "y": -201.8932,
+            "value": 25,
+            "category": 3
+        },
+        {
+            "id": "48",
+            "name": "減少碳排放",
+            "symbolSize": 23.418945,
+            "x": -134.6718,
+            "y": -412.7135,
+            "value": 30,
+            "category": 2
+        },
+        {
+            "id": "49",
+            "name": "可持續採購政策",
+            "symbolSize": 10.236741,
+            "x": 198.0642,
+            "y": -258.1213,
+            "value": 18,
+            "category": 7
+        },
+        {
+            "id": "50",
+            "name": "環保包裝",
+            "symbolSize": 16.12653,
+            "x": 145.8321,
+            "y": -327.6253,
+            "value": 28,
+            "category": 7
+        },
+        {
+            "id": "51",
+            "name": "員工福利",
+            "symbolSize": 11.584973,
+            "x": 67.9352,
+            "y": -362.2332,
+            "value": 15,
+            "category": 5
+        },
+        {
+            "id": "52",
+            "name": "公眾參與",
+            "symbolSize": 14.437826,
+            "x": 93.7639,
+            "y": -174.2356,
+            "value": 25,
+            "category": 5
+        },
+        {
+            "id": "53",
+            "name": "清潔能源投資",
+            "symbolSize": 20.463122,
+            "x": -47.9425,
+            "y": -149.3129,
+            "value": 30,
+            "category": 1
+        },
+        {
+            "id": "54",
+            "name": "綠色物流",
+            "symbolSize": 18.943111,
+            "x": -98.0912,
+            "y": -222.4531,
+            "value": 22,
+            "category": 1
+        },
+        {
+            "id": "55",
+            "name": "可持續交通系統",
+            "symbolSize": 19.839241,
+            "x": 68.4457,
+            "y": -297.5863,
+            "value": 25,
+            "category": 1
+        },
+        {
+            "id": "56",
+            "name": "廢物回收",
+            "symbolSize": 11.759216,
+            "x": -92.7731,
+            "y": -480.1234,
+            "value": 18,
+            "category": 4
+        },
+        {
+            "id": "57",
+            "name": "生物燃料使用",
+            "symbolSize": 15.612375,
+            "x": 42.3319,
+            "y": -215.4983,
+            "value": 27,
+            "category": 2
+        },
+        {
+            "id": "58",
+            "name": "社會福利計劃",
+            "symbolSize": 13.591733,
+            "x": -182.2746,
+            "y": -238.4527,
+            "value": 18,
+            "category": 6
+        },
+        {
+            "id": "59",
+            "name": "負責任的能源使用",
+            "symbolSize": 22.246933,
+            "x": -124.8564,
+            "y": -301.4765,
+            "value": 30,
+            "category": 0
+        },
+        {
+            "id": "60",
+            "name": "再生能源投資",
+            "symbolSize": 26.557932,
+            "x": -159.6837,
+            "y": -210.8903,
+            "value": 30,
+            "category": 0
+        },
+        {"id":"61","name":"職場平等","symbolSize":10.822187,"x":35.1729,"y":-335.8957,"value":20,"category":5},
+    {"id":"62","name":"綠色技術創新","symbolSize":18.356748,"x":93.3873,"y":-128.4652,"value":25,"category":1},
+    {"id":"63","name":"綠色投資基金","symbolSize":14.732173,"x":125.6341,"y":-189.3572,"value":22,"category":6},
+    {"id":"64","name":"節水技術","symbolSize":15.065128,"x":108.9732,"y":-234.7456,"value":23,"category":2},
+    {"id":"65","name":"環保設計","symbolSize":16.182329,"x":70.1412,"y":-369.5739,"value":20,"category":7},
+    {"id":"66","name":"女性賦權","symbolSize":13.331298,"x":-163.2457,"y":-206.1823,"value":18,"category":5},
+    {"id":"67","name":"可持續供應鏈管理","symbolSize":22.537245,"x":39.7617,"y":-281.6194,"value":27,"category":7},
+    {"id":"68","name":"環保材料採用","symbolSize":17.365537,"x":175.7395,"y":-146.2321,"value":22,"category":7},
+    {"id":"69","name":"減少能源消耗","symbolSize":19.475342,"x":110.2945,"y":-312.4501,"value":28,"category":1},
+    {"id":"70","name":"教育與培訓","symbolSize":12.623478,"x":-125.7486,"y":-269.1347,"value":20,"category":5},
+    {"id":"71","name":"電動車支持","symbolSize":23.118933,"x":45.0238,"y":-389.2274,"value":30,"category":0},
+    {"id":"72","name":"企業透明度","symbolSize":14.908731,"x":-60.5428,"y":-209.7235,"value":22,"category":6},
+    {"id":"73","name":"碳排放抵消","symbolSize":18.064227,"x":85.6721,"y":-195.3478,"value":25,"category":2},
+    {"id":"74","name":"社會包容","symbolSize":13.726814,"x":63.9384,"y":-375.8472,"value":18,"category":5},
+    {"id":"75","name":"水污染控制","symbolSize":16.953228,"x":-172.3815,"y":-245.4168,"value":30,"category":2},
+    {"id":"76","name":"生物多樣性保護","symbolSize":20.056397,"x":92.1546,"y":-321.4516,"value":25,"category":3}
+    ],
+    "edges": [
+        {
+            "source": "1",
+            "target": "0"
+        },
+        {
+            "source": "2",
+            "target": "0"
+        },
+        {
+            "source": "3",
+            "target": "0"
+        },
+        {
+            "source": "3",
+            "target": "2"
+        },
+        {
+            "source": "4",
+            "target": "0"
+        },
+        {
+            "source": "5",
+            "target": "0"
+        },
+        {
+            "source": "6",
+            "target": "0"
+        },
+        {
+            "source": "7",
+            "target": "0"
+        },
+        {
+            "source": "8",
+            "target": "0"
+        },
+        {
+            "source": "9",
+            "target": "0"
+        },
+        {
+            "source": "11",
+            "target": "0"
+        },
+        {
+            "source": "11",
+            "target": "2"
+        },
+        {
+            "source": "11",
+            "target": "3"
+        },
+        {
+            "source": "11",
+            "target": "10"
+        },
+        {
+            "source": "12",
+            "target": "11"
+        },
+        {
+            "source": "13",
+            "target": "11"
+        },
+        {
+            "source": "14",
+            "target": "11"
+        },
+        {
+            "source": "15",
+            "target": "11"
+        },
+        {
+            "source": "17",
+            "target": "16"
+        },
+        {
+            "source": "18",
+            "target": "16"
+        },
+        {
+            "source": "18",
+            "target": "17"
+        },
+        {
+            "source": "19",
+            "target": "16"
+        },
+        {
+            "source": "19",
+            "target": "17"
+        },
+        {
+            "source": "19",
+            "target": "18"
+        },
+        {
+            "source": "20",
+            "target": "16"
+        },
+        {
+            "source": "20",
+            "target": "17"
+        },
+        {
+            "source": "20",
+            "target": "18"
+        },
+        {
+            "source": "20",
+            "target": "19"
+        },
+        {
+            "source": "21",
+            "target": "16"
+        },
+        {
+            "source": "21",
+            "target": "17"
+        },
+        {
+            "source": "21",
+            "target": "18"
+        },
+        {
+            "source": "21",
+            "target": "19"
+        },
+        {
+            "source": "21",
+            "target": "20"
+        },
+        {
+            "source": "22",
+            "target": "16"
+        },
+        {
+            "source": "22",
+            "target": "17"
+        },
+        {
+            "source": "22",
+            "target": "18"
+        },
+        {
+            "source": "22",
+            "target": "19"
+        },
+        {
+            "source": "22",
+            "target": "20"
+        },
+        {
+            "source": "22",
+            "target": "21"
+        },
+        {
+            "source": "23",
+            "target": "11"
+        },
+        {
+            "source": "23",
+            "target": "12"
+        },
+        {
+            "source": "23",
+            "target": "16"
+        },
+        {
+            "source": "23",
+            "target": "17"
+        },
+        {
+            "source": "23",
+            "target": "18"
+        },
+        {
+            "source": "23",
+            "target": "19"
+        },
+        {
+            "source": "23",
+            "target": "20"
+        },
+        {
+            "source": "23",
+            "target": "21"
+        },
+        {
+            "source": "23",
+            "target": "22"
+        },
+        {
+            "source": "24",
+            "target": "11"
+        },
+        {
+            "source": "24",
+            "target": "23"
+        },
+        {
+            "source": "25",
+            "target": "11"
+        },
+        {
+            "source": "25",
+            "target": "23"
+        },
+        {
+            "source": "25",
+            "target": "24"
+        },
+        {
+            "source": "26",
+            "target": "11"
+        },
+        {
+            "source": "26",
+            "target": "16"
+        },
+        {
+            "source": "26",
+            "target": "24"
+        },
+        {
+            "source": "26",
+            "target": "25"
+        },
+        {
+            "source": "27",
+            "target": "11"
+        },
+        {
+            "source": "27",
+            "target": "23"
+        },
+        {
+            "source": "27",
+            "target": "24"
+        },
+        {
+            "source": "27",
+            "target": "25"
+        },
+        {
+            "source": "27",
+            "target": "26"
+        },
+        {
+            "source": "28",
+            "target": "11"
+        },
+        {
+            "source": "28",
+            "target": "27"
+        },
+        {
+            "source": "29",
+            "target": "11"
+        },
+        {
+            "source": "29",
+            "target": "23"
+        },
+        {
+            "source": "29",
+            "target": "27"
+        },
+        {
+            "source": "30",
+            "target": "23"
+        },
+        {
+            "source": "31",
+            "target": "11"
+        },
+        {
+            "source": "31",
+            "target": "23"
+        },
+        {
+            "source": "31",
+            "target": "27"
+        },
+        {
+            "source": "31",
+            "target": "30"
+        },
+        {
+            "source": "32",
+            "target": "11"
+        },
+        {
+            "source": "33",
+            "target": "11"
+        },
+        {
+            "source": "33",
+            "target": "27"
+        },
+        {
+            "source": "34",
+            "target": "11"
+        },
+        {
+            "source": "34",
+            "target": "29"
+        },
+        {
+            "source": "35",
+            "target": "11"
+        },
+        {
+            "source": "35",
+            "target": "29"
+        },
+        {
+            "source": "35",
+            "target": "34"
+        },
+        {
+            "source": "36",
+            "target": "11"
+        },
+        {
+            "source": "36",
+            "target": "29"
+        },
+        {
+            "source": "36",
+            "target": "34"
+        },
+        {
+            "source": "36",
+            "target": "35"
+        },
+        {
+            "source": "37",
+            "target": "11"
+        },
+        {
+            "source": "37",
+            "target": "29"
+        },
+        {
+            "source": "37",
+            "target": "34"
+        },
+        {
+            "source": "37",
+            "target": "35"
+        },
+        {
+            "source": "37",
+            "target": "36"
+        },
+        {
+            "source": "38",
+            "target": "11"
+        },
+        {
+            "source": "38",
+            "target": "29"
+        },
+        {
+            "source": "38",
+            "target": "34"
+        },
+        {
+            "source": "38",
+            "target": "35"
+        },
+        {
+            "source": "38",
+            "target": "36"
+        },
+        {
+            "source": "38",
+            "target": "37"
+        },
+        {
+            "source": "39",
+            "target": "25"
+        },
+        {
+            "source": "40",
+            "target": "25"
+        },
+        {
+            "source": "41",
+            "target": "24"
+        },
+        {
+            "source": "41",
+            "target": "25"
+        },
+        {
+            "source": "42",
+            "target": "24"
+        },
+        {
+            "source": "42",
+            "target": "25"
+        },
+        {
+            "source": "42",
+            "target": "41"
+        },
+        {
+            "source": "43",
+            "target": "11"
+        },
+        {
+            "source": "43",
+            "target": "26"
+        },
+        {
+            "source": "43",
+            "target": "27"
+        },
+        {
+            "source": "44",
+            "target": "11"
+        },
+        {
+            "source": "44",
+            "target": "28"
+        },
+        {
+            "source": "45",
+            "target": "28"
+        },
+        {
+            "source": "47",
+            "target": "46"
+        },
+        {
+            "source": "48",
+            "target": "11"
+        },
+        {
+            "source": "48",
+            "target": "25"
+        },
+        {
+            "source": "48",
+            "target": "27"
+        },
+        {
+            "source": "48",
+            "target": "47"
+        },
+        {
+            "source": "49",
+            "target": "11"
+        },
+        {
+            "source": "49",
+            "target": "26"
+        },
+        {
+            "source": "50",
+            "target": "24"
+        },
+        {
+            "source": "50",
+            "target": "49"
+        },
+        {
+            "source": "51",
+            "target": "11"
+        },
+        {
+            "source": "51",
+            "target": "26"
+        },
+        {
+            "source": "51",
+            "target": "49"
+        },
+        {
+            "source": "52",
+            "target": "39"
+        },
+        {
+            "source": "52",
+            "target": "51"
+        },
+        {
+            "source": "53",
+            "target": "51"
+        },
+        {
+            "source": "54",
+            "target": "26"
+        },
+        {
+            "source": "54",
+            "target": "49"
+        },
+        {
+            "source": "54",
+            "target": "51"
+        },
+        {
+            "source": "55",
+            "target": "11"
+        },
+        {
+            "source": "55",
+            "target": "16"
+        },
+        {
+            "source": "55",
+            "target": "25"
+        },
+        {
+            "source": "55",
+            "target": "26"
+        },
+        {
+            "source": "55",
+            "target": "39"
+        },
+        {
+            "source": "55",
+            "target": "41"
+        },
+        {
+            "source": "55",
+            "target": "48"
+        },
+        {
+            "source": "55",
+            "target": "49"
+        },
+        {
+            "source": "55",
+            "target": "51"
+        },
+        {
+            "source": "55",
+            "target": "54"
+        },
+        {
+            "source": "56",
+            "target": "49"
+        },
+        {
+            "source": "56",
+            "target": "55"
+        },
+        {
+            "source": "57",
+            "target": "41"
+        },
+        {
+            "source": "57",
+            "target": "48"
+        },
+        {
+            "source": "57",
+            "target": "55"
+        },
+        {
+            "source": "58",
+            "target": "11"
+        },
+        {
+            "source": "58",
+            "target": "27"
+        },
+        {
+            "source": "58",
+            "target": "48"
+        },
+        {
+            "source": "58",
+            "target": "55"
+        },
+        {
+            "source": "58",
+            "target": "57"
+        },
+        {
+            "source": "59",
+            "target": "48"
+        },
+        {
+            "source": "59",
+            "target": "55"
+        },
+        {
+            "source": "59",
+            "target": "57"
+        },
+        {
+            "source": "59",
+            "target": "58"
+        },
+        {
+            "source": "60",
+            "target": "48"
+        },
+        {
+            "source": "60",
+            "target": "58"
+        },
+        {
+            "source": "60",
+            "target": "59"
+        },
+        {
+            "source": "61",
+            "target": "48"
+        },
+        {
+            "source": "61",
+            "target": "55"
+        },
+        {
+            "source": "61",
+            "target": "57"
+        },
+        {
+            "source": "61",
+            "target": "58"
+        },
+        {
+            "source": "61",
+            "target": "59"
+        },
+        {
+            "source": "61",
+            "target": "60"
+        },
+        {
+            "source": "62",
+            "target": "41"
+        },
+        {
+            "source": "62",
+            "target": "48"
+        },
+        {
+            "source": "62",
+            "target": "55"
+        },
+        {
+            "source": "62",
+            "target": "57"
+        },
+        {
+            "source": "62",
+            "target": "58"
+        },
+        {
+            "source": "62",
+            "target": "59"
+        },
+        {
+            "source": "62",
+            "target": "60"
+        },
+        {
+            "source": "62",
+            "target": "61"
+        },
+        {
+            "source": "63",
+            "target": "48"
+        },
+        {
+            "source": "63",
+            "target": "55"
+        },
+        {
+            "source": "63",
+            "target": "57"
+        },
+        {
+            "source": "63",
+            "target": "58"
+        },
+        {
+            "source": "63",
+            "target": "59"
+        },
+        {
+            "source": "63",
+            "target": "60"
+        },
+        {
+            "source": "63",
+            "target": "61"
+        },
+        {
+            "source": "63",
+            "target": "62"
+        },
+        {
+            "source": "64",
+            "target": "11"
+        },
+        {
+            "source": "64",
+            "target": "48"
+        },
+        {
+            "source": "64",
+            "target": "55"
+        },
+        {
+            "source": "64",
+            "target": "57"
+        },
+        {
+            "source": "64",
+            "target": "58"
+        },
+        {
+            "source": "64",
+            "target": "59"
+        },
+        {
+            "source": "64",
+            "target": "60"
+        },
+        {
+            "source": "64",
+            "target": "61"
+        },
+        {
+            "source": "64",
+            "target": "62"
+        },
+        {
+            "source": "64",
+            "target": "63"
+        },
+        {
+            "source": "65",
+            "target": "48"
+        },
+        {
+            "source": "65",
+            "target": "55"
+        },
+        {
+            "source": "65",
+            "target": "57"
+        },
+        {
+            "source": "65",
+            "target": "58"
+        },
+        {
+            "source": "65",
+            "target": "59"
+        },
+        {
+            "source": "65",
+            "target": "60"
+        },
+        {
+            "source": "65",
+            "target": "61"
+        },
+        {
+            "source": "65",
+            "target": "62"
+        },
+        {
+            "source": "65",
+            "target": "63"
+        },
+        {
+            "source": "65",
+            "target": "64"
+        },
+        {
+            "source": "66",
+            "target": "48"
+        },
+        {
+            "source": "66",
+            "target": "58"
+        },
+        {
+            "source": "66",
+            "target": "59"
+        },
+        {
+            "source": "66",
+            "target": "60"
+        },
+        {
+            "source": "66",
+            "target": "61"
+        },
+        {
+            "source": "66",
+            "target": "62"
+        },
+        {
+            "source": "66",
+            "target": "63"
+        },
+        {
+            "source": "66",
+            "target": "64"
+        },
+        {
+            "source": "66",
+            "target": "65"
+        },
+        {
+            "source": "67",
+            "target": "57"
+        },
+        {
+            "source": "68",
+            "target": "11"
+        },
+        {
+            "source": "68",
+            "target": "24"
+        },
+        {
+            "source": "68",
+            "target": "25"
+        },
+        {
+            "source": "68",
+            "target": "27"
+        },
+        {
+            "source": "68",
+            "target": "41"
+        },
+        {
+            "source": "68",
+            "target": "48"
+        },
+        {
+            "source": "69",
+            "target": "11"
+        },
+        {
+            "source": "69",
+            "target": "24"
+        },
+        {
+            "source": "69",
+            "target": "25"
+        },
+        {
+            "source": "69",
+            "target": "27"
+        },
+        {
+            "source": "69",
+            "target": "41"
+        },
+        {
+            "source": "69",
+            "target": "48"
+        },
+        {
+            "source": "69",
+            "target": "68"
+        },
+        {
+            "source": "70",
+            "target": "11"
+        },
+        {
+            "source": "70",
+            "target": "24"
+        },
+        {
+            "source": "70",
+            "target": "25"
+        },
+        {
+            "source": "70",
+            "target": "27"
+        },
+        {
+            "source": "70",
+            "target": "41"
+        },
+        {
+            "source": "70",
+            "target": "58"
+        },
+        {
+            "source": "70",
+            "target": "68"
+        },
+        {
+            "source": "70",
+            "target": "69"
+        },
+        {
+            "source": "71",
+            "target": "11"
+        },
+        {
+            "source": "71",
+            "target": "25"
+        },
+        {
+            "source": "71",
+            "target": "27"
+        },
+        {
+            "source": "71",
+            "target": "41"
+        },
+        {
+            "source": "71",
+            "target": "48"
+        },
+        {
+            "source": "71",
+            "target": "68"
+        },
+        {
+            "source": "71",
+            "target": "69"
+        },
+        {
+            "source": "71",
+            "target": "70"
+        },
+        {
+            "source": "72",
+            "target": "11"
+        },
+        {
+            "source": "72",
+            "target": "26"
+        },
+        {
+            "source": "72",
+            "target": "27"
+        },
+        {
+            "source": "73",
+            "target": "48"
+        },
+        {
+            "source": "74",
+            "target": "48"
+        },
+        {
+            "source": "74",
+            "target": "73"
+        },
+        {
+            "source": "75",
+            "target": "25"
+        },
+        {
+            "source": "75",
+            "target": "41"
+        },
+        {
+            "source": "75",
+            "target": "48"
+        },
+        {
+            "source": "75",
+            "target": "68"
+        },
+        {
+            "source": "75",
+            "target": "69"
+        },
+        {
+            "source": "75",
+            "target": "70"
+        },
+        {
+            "source": "75",
+            "target": "71"
+        },
+        {
+            "source": "76",
+            "target": "48"
+        },
+        {
+            "source": "76",
+            "target": "58"
+        },
+        {
+            "source": "76",
+            "target": "62"
+        },
+        {
+            "source": "76",
+            "target": "63"
+        },
+        {
+            "source": "76",
+            "target": "64"
+        },
+        {
+            "source": "76",
+            "target": "65"
+        },
+        {
+            "source": "76",
+            "target": "66"
+        }
+    ],
+    "categories": [
+        {
+            "name": "A"
+        },
+        {
+            "name": "B"
+        },
+        {
+            "name": "C"
+        },
+        {
+            "name": "D"
+        },
+        {
+            "name": "E"
+        },
+        {
+            "name": "F"
+        },
+        {
+            "name": "G"
+        },
+        {
+            "name": "H"
+        },
+        {
+            "name": "I"
+        }
+    ]
+    
+}

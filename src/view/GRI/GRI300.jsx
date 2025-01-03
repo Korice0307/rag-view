@@ -2,9 +2,10 @@ import React from "react";
 import { useChartObj } from "../../hooks/kg-chart";
 import ReactECharts from "echarts-for-react"
 import TableComponent from "../../component/Table/index"
+import EChartComponent from "../../hooks/ExampleEChart";
 
 function GRI300() {
-    const { option } = useChartObj("http://140.119.164.71:1880/kg_test2");
+    const { option } = useChartObj("http://140.119.164.71:1880/kg_test4");
     const data = [
         {
             name: "302-1：組織內部的能源消耗量",
