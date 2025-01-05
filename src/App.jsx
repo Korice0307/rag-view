@@ -15,6 +15,7 @@ function App() {
         <div className='content'>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/ExamplePage" element={<ExamplePage />} />
             <Route path="/GRI200" element={<GRI200 />} />
             <Route path="/GRI300" element={<GRI300 />} />
             <Route path="/GRI400" element={<GRI400 />} />

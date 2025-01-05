@@ -26,16 +26,21 @@
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #333;
-  background-color: #ddd;
+  color: #fff; /* 更亮的文字顏色 */
+  background-color: #007bff; /* 更鮮豔的背景色 */
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #0056b3;
+  font-size: 16px; /* 增大字體大小 */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加陰影 */
+  transition: background-color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-  background-color: #bbb;
-  border-color: #999;
+  background-color: #0056b3;
+  border-color: #004094;
+  color: #fff;
 }
+
 
 /* Hide Button */
 .toggle-button {

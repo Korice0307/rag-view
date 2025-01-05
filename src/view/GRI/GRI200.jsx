@@ -5,7 +5,6 @@ function GRI200() {
     return (
         <div>
             GRI200
-            <EChartComponent />
         </div>
     );
 }

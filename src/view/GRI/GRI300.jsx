@@ -2,10 +2,10 @@ import React from "react";
 import { useChartObj } from "../../hooks/kg-chart";
 import ReactECharts from "echarts-for-react"
 import TableComponent from "../../component/Table/index"
-import EChartComponent from "../../hooks/ExampleEChart";
+import ExpandableTable from "../../component/ExpandableTable"
 
 function GRI300() {
-    const { option } = useChartObj("http://140.119.164.71:1880/kg_test4");
+    const { option } = useChartObj("http://140.119.164.71:1880/kg_test2");
     const data = [
         {
             name: "302-1：組織內部的能源消耗量",
@@ -52,7 +52,7 @@ function GRI300() {
 
     return (
         <div>
-            <TableComponent data={data} />
+            <ExpandableTable data={data}/>
             <ReactECharts option={option} titleName="GRI300" style={{ height: 600, width: "100%" }} />;
         </div>
     );
