@@ -1,102 +1,99 @@
-import React, { useState } from 'react';
-import "./index.css"
-const ExpandableTable = () => {
-  // State to manage selected main title
-  const [selectedMainTitle, setSelectedMainTitle] = useState(null);
+// ExpandableTables.js
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./index.css";
 
-  // State to manage expanded sub-titles
-  const [expandedSubTables, setExpandedSubTables] = useState({});
+const ExpandableTables = ({ url }) => {
+  const [data, setData] = useState({ nodes: [], edges: [] });
+  const [expandedNodes, setExpandedNodes] = useState([]);
 
-  // Example data
-  const data = {
-    title301: ["title301-1", "title301-2", "title301-3", "title301-4", "title301-5"],
-    title302: ["title302-1", "title302-2", "title302-3"],
+  useEffect(() => {
+    if (url) {
+      axios
+        .get(url)
+        .then((response) => {
+          const { nodes, edges } = response.data;
+          if (Array.isArray(nodes) && Array.isArray(edges)) {
+            setData(response.data);
+          } else {
+            console.error("Invalid data structure:", response.data);
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+    }
+  }, [url]);
+
+  const toggleNode = (nodeName) => {
+    setExpandedNodes((prev) =>
+      prev.includes(nodeName)
+        ? prev.filter((name) => name !== nodeName)
+        : [...prev, nodeName]
+    );
   };
 
-  // Mock table content
-  const tableContent = {
-    "title301-1": ["Row1", "Row2", "Row3"],
-    "title301-2": ["RowA", "RowB"],
-    "title302-1": ["Item1", "Item2"],
+  const organizeData = () => {
+    const nodeMap = {};
+    data.nodes.forEach((node) => {
+      nodeMap[node.name] = { ...node, children: [] };
+    });
+
+    data.edges.forEach((edge) => {
+      if (nodeMap[edge.source]) {
+        nodeMap[edge.source].children.push({
+          ...nodeMap[edge.target],
+          relation: edge.name,
+        });
+      }
+    });
+
+    return Object.values(nodeMap).filter(
+      (node) => !data.edges.some((edge) => edge.target === node.name)
+    );
   };
 
-  // Handle main title selection
-  const handleMainTitleChange = (event) => {
-    setSelectedMainTitle(event.target.value);
-    setExpandedSubTables({}); // Reset expanded sub-tables
-  };
-
-  // Toggle sub-table visibility
-  const toggleSubTable = (subTitle) => {
-    setExpandedSubTables((prevState) => ({
-      ...prevState,
-      [subTitle]: !prevState[subTitle],
-    }));
-  };
+  const groupedData = organizeData();
 
   return (
-    <div>
-      {/* Dropdown for Main Titles */}
-      <select onChange={handleMainTitleChange}>
-        <option value="">Select Title</option>
-        {Object.keys(data).map((mainTitle) => (
-          <option key={mainTitle} value={mainTitle}>
-            {mainTitle}
-          </option>
-        ))}
-      </select>
-
-      {/* Sub-Titles and Expandable Tables */}
-      {selectedMainTitle && (
-        <div style={{ marginTop: "20px" }}>
-          <h3>{selectedMainTitle}</h3>
-          <ul>
-            {data[selectedMainTitle].map((subTitle) => (
-              <li key={subTitle}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    cursor: "pointer",
-                    backgroundColor: "#f0f0f0",
-                    padding: "10px",
-                    borderRadius: "5px",
-                  }}
-                  onClick={() => toggleSubTable(subTitle)}
-                >
-                  {subTitle}
-                  <span>{expandedSubTables[subTitle] ? "▲" : "▼"}</span>
-                </div>
-
-                {/* Table Content */}
-                {expandedSubTables[subTitle] && (
-                  <table style={{ marginTop: "10px", width: "100%", border: "1px solid #ccc" }}>
-                    <thead>
-                      <tr>
-                        <th>Row</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {tableContent[subTitle]?.map((row, index) => (
-                        <tr key={index}>
-                          <td>{row}</td>
-                        </tr>
-                      )) || (
-                        <tr>
-                          <td>No data available</td>
-                        </tr>
-                      )}
-                    </tbody>
-                  </table>
-                )}
-              </li>
-            ))}
-          </ul>
+    <div className="tables-container">
+      <h1>Expandable Tables</h1>
+      {groupedData.map((node) => (
+        <div key={node.name}>
+          <div className="category-header" onClick={() => toggleNode(node.name)}>
+            <h3>
+              {node.category} (Value: {node.value})
+            </h3>
+            <button>
+              {expandedNodes.includes(node.name) ? "收起" : "展開"}
+            </button>
+          </div>
+          {expandedNodes.includes(node.name) && node.children.length > 0 && (
+            <table className="esg-table">
+              <thead>
+                <tr>
+                  <th>子節點名稱</th>
+                  <th>描述</th>
+                  <th>連線關係</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                {node.children.map((child) => (
+                  <tr key={child.name}>
+                    <td>{child.name}</td>
+                    <td>{child.category}</td>
+                    <td>{child.relation}</td>
+                    <td>{child.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
         </div>
-      )}
+      ))}
     </div>
   );
 };
 
-export default ExpandableTable;
+export default ExpandableTables;
