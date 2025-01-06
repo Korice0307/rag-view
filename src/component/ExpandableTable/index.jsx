@@ -1,4 +1,3 @@
-// ExpandableTables.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./index.css";
@@ -61,9 +60,7 @@ const ExpandableTables = ({ url }) => {
       {groupedData.map((node) => (
         <div key={node.name}>
           <div className="category-header" onClick={() => toggleNode(node.name)}>
-            <h3>
-              {node.category} (Value: {node.value})
-            </h3>
+            <h3>{node.name}</h3>
             <button>
               {expandedNodes.includes(node.name) ? "收起" : "展開"}
             </button>
@@ -73,7 +70,9 @@ const ExpandableTables = ({ url }) => {
               <thead>
                 <tr>
                   <th>{node.name}子項目</th>
+                  <th>資料上傳</th>
                   <th>描述</th>
+                  <th>知識圖譜座標</th>
                   <th>AI</th>
                   <th>AI評分</th>
                 </tr>
@@ -82,7 +81,9 @@ const ExpandableTables = ({ url }) => {
                 {node.children.map((child) => (
                   <tr key={child.name}>
                     <td>{child.name}</td>
+                    <td>{child.airesponse}</td>
                     <td>{child.category}</td>
+                    <td>{}</td>
                     <td>{child.relation}</td>
                     <td>{child.value}</td>
                   </tr>
