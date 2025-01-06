@@ -1,43 +1,52 @@
-/* src/App.css */
 .app {
   display: flex;
   height: 100vh;
+  overflow: hidden; /* 防止因子元素寬度超出導致滾動條出現 */
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 200px;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc; /* 添加外框 */
+  width: 200px; /* 側邊欄固定寬度 */
+  transition: width 0.3s; /* 側邊欄展開/收起的動畫 */
+  flex-shrink: 0; /* 防止側邊欄縮小 */
 }
 
 .page-container {
+  flex: 1; /* 占滿剩餘空間 */
+  overflow: hidden; /* 禁止滾動條出現 */
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
 }
 
 .content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-  width: 100%; /* 確保內容寬度自適應 */
+  gap: 20px; /* 子項間距 */
+  min-width: 800px; /* 固定內容區域的最小寬度 */
+  flex: 1; /* 占滿可用空間 */
+  overflow: auto; /* 如果內容超出容器，允許滾動 */
 }
 
 .table-container {
-  flex: 0 0 45%; /* 固定寬度，這樣它不會變化 */
-  height: 700px;
-  overflow: auto;
+  flex: 0 0 45%; /* 固定寬度為 45% */
+  width: 45%; /* 確保寬度固定 */
+  box-sizing: border-box; /* 計算寬度時包括 padding 和 border */
+  overflow: visible; /* 允許內容展開，不限制滾動 */
 }
 
+.split-item {
+  flex: 1; /* 平分剩餘空間 */
+  min-width: 0; /* 防止內容超出 */
+  display: flex;
+  flex-direction: column;
+}
 
+/* 新增圖表容器的樣式 */
 .chart-container {
-  flex: 1;
-  max-width: 55%; /* 增加图表容器的宽度比例 */
-  height: 700px; /* 增加高度 */
+  flex: 1; /* 平分剩餘空間 */
+  min-width: 0; /* 防止內容超出 */
+  border: 2px solid #87cefa; /* 添加淺藍色邊框 */
+  border-radius: 8px; /* 圓角邊框 */
+  padding: 10px; /* 添加內間距，避免圖表貼邊 */
+  box-sizing: border-box; /* 計算寬度時包括 padding 和 border */
+  background-color: #fff; /* 可選：背景顏色 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 可選：增加陰影效果 */
 }
