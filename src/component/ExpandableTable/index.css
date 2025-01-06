@@ -1,13 +1,32 @@
-/* index.css */
+/* 現有表格樣式保持不變 */
+.table-container {
+  flex: 1;
+  max-width: 45%; /* 保持這個寬度，無論表格是否展開 */
+  min-width: 45%;
+  width: 45%; /* 確保寬度不變 */
+  height: 700px; /* 增加高度 */
+  overflow: auto;
+}
 
-.tables-container {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .category-header {
+/* 分屏佈局樣式 */
+.split-container {
+    display: flex;
+    gap: 20px; /* 元素間距 */
+}
+
+.split-item {
+    flex: 1; /* 每個子項平分可用寬度 */
+    min-width: 0; /* 防止子項超出容器 */
+    display: flex;
+    flex-direction: column;
+}
+
+.split-item .esg-table {
+    width: 100%; /* 確保表格占滿分配的空間 */
+}
+
+/* 表格樣式保持一致 */
+.category-header {
     background-color: #87cefa;
     padding: 10px;
     margin: 10px 0;
@@ -16,14 +35,14 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-  }
-  
-  .category-header h3 {
+}
+
+.category-header h3 {
     color: #333;
     font-size: 18px;
-  }
-  
-  button {
+}
+
+button {
     background-color: #00b300;
     color: white;
     border: none;
@@ -32,52 +51,61 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #008000;
-  }
-  
-  button:focus {
+}
+
+button:focus {
     outline: none;
-  }
-  
-  .esg-table {
+}
+
+.esg-table {
     width: 100%;
     margin-top: 10px;
     border-collapse: collapse;
-  }
-  
-  .esg-table th,
-  .esg-table td {
+}
+
+.esg-table th,
+.esg-table td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd;
-  }
-  
-  .esg-table th {
+}
+
+.esg-table th {
     background-color: #87cefa;
     color: #fff;
-  }
-  
-  .esg-table tbody tr:nth-child(even) {
+}
+
+.esg-table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
-  
-  .esg-table a {
+}
+
+.esg-table a {
     color: #00b300;
     text-decoration: none;
-  }
-  
-  .esg-table a:hover {
+}
+
+.esg-table a:hover {
     text-decoration: underline;
-  }
-  .node-color-box {
+}
+
+/* 適配圖表樣式 */
+.react-echarts {
+    width: 100%;
+    height: 600px; /* 圖表高度 */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.node-color-box {
     border-radius: 3px; /* 圓角 */
     transition: transform 0.3s ease; /* 滑鼠懸停時的過渡效果 */
-  }
-  
-  .node-color-box:hover {
+}
+
+.node-color-box:hover {
     transform: scale(1.2); /* 懸停時稍微放大 */
-  }
-  
+}

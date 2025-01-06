@@ -14,8 +14,30 @@
   border: 1px solid #ccc; /* 添加外框 */
 }
 
-.content {
-  flex: 1;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
-  overflow-y: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%; /* 確保內容寬度自適應 */
+}
+
+.table-container {
+  flex: 0 0 45%; /* 固定寬度，這樣它不會變化 */
+  height: 700px;
+  overflow: auto;
+}
+
+
+.chart-container {
+  flex: 1;
+  max-width: 55%; /* 增加图表容器的宽度比例 */
+  height: 700px; /* 增加高度 */
 }
