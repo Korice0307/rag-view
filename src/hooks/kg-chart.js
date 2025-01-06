@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 export const useChartObj = (url, titleName) => {
   const [graphData, setGraphData] = useState([]);
   const [graphLinks, setGraphLinks] = useState([]);
+  const [highlightedNode, setHighlightedNode] = useState(null);
 
   useEffect(() => {
     axios.get(url).then((response) => {
@@ -70,11 +71,21 @@ export const useChartObj = (url, titleName) => {
           color: "source",
           curveness: 0.3,
         },
-        data: graphData,
+        data: graphData.map((node) => ({
+          ...node,
+          itemStyle: {
+            opacity: highlightedNode === null || highlightedNode === node.name ? 1 : 0.3,
+            color: node.itemStyle.color,
+          },
+        })),
         links: graphLinks,
       },
     ],
   };
 
-  return { option };
+  const handleHoverNode = (nodeName) => {
+    setHighlightedNode(nodeName);
+  };
+
+  return { option, handleHoverNode };
 };
