@@ -1,65 +1,55 @@
-/* src/style/Sidebar.css */
+/* Sidebar styles */
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
-  background-color: #f0f0f0;
+  width: 240px;
+  background-color: #f5f8f9; /* 更柔和的背景色，符合清新自然風格 */
   padding: 20px;
-  border: 1px solid #ccc; /* 添加外框 */
+  border-right: 3px solid #d1d1d1; /* 更細的右側邊框，簡潔 */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* 添加輕微陰影，增強立體感 */
+  border-radius: 10px; /* 圓角 */
 }
 
+/* 標題 */
 .sidebar h3 {
   margin-bottom: 20px;
+  font-size: 20px;
+  color: #2c3e50; /* 深藍色，營造穩重感 */
+  font-weight: 600;
 }
 
+/* 菜單列表 */
 .sidebar ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* 每個項目 */
 .sidebar ul li {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
+/* 連結樣式 */
 .sidebar ul li a {
   display: block;
-  padding: 10px;
+  padding: 12px 15px;
   text-decoration: none;
-  color: #fff; /* 更亮的文字顏色 */
-  background-color: #007bff; /* 更鮮豔的背景色 */
-  border-radius: 10px;
-  border: 1px solid #0056b3;
-  font-size: 16px; /* 增大字體大小 */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加陰影 */
-  transition: background-color 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-  background-color: #0056b3;
-  border-color: #004094;
   color: #fff;
-}
-
-
-/* Hide Button */
-.toggle-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  background-color: #2ecc71; /* 綠色背景，符合 ESG 環保風格 */
+  border-radius: 8px; /* 圓角 */
   font-size: 16px;
-  border-radius: 5px;
-  margin: 10px 0;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 添加變化效果 */
 }
 
-.toggle-button:hover {
-  background-color: #0056b3;
+/* 連結 hover 效果 */
+.sidebar ul li a:hover {
+  background-color: #27ae60; /* 深綠色背景 */
+  transform: translateX(5px); /* 點擊時輕微右移，增強互動感 */
 }
 
-/* Dropdown Menu */
+/* Dropdown 菜單 */
 .dropdown {
   list-style: none;
   padding-left: 20px;
@@ -67,17 +57,40 @@
 }
 
 .dropdown li {
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
+/* 按鈕樣式 */
+.toggle-button {
+  background-color: #2ecc71; /* 使用綠色，符合 ESG 視覺 */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.toggle-button:hover {
+  background-color: #27ae60; /* 深綠色背景 */
+  transform: translateY(-2px); /* 按鈕懸停時輕微上升 */
+}
+
+/* '回到主畫面'樣式 */
 .backhome {
   margin-top: auto;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   background-color: #333;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .backhome a {
@@ -88,4 +101,20 @@
 .backhome a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+/* 單獨的 dropdown 觸發按鈕 */
+.sidebar ul li div {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #3498db; /* 藍色背景 */
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li div:hover {
+  background-color: #2980b9; /* 深藍色背景 */
 }

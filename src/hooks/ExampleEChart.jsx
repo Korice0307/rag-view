@@ -77,8 +77,8 @@ const EChartComponent = ({ url }) => {
 
   // 渲染 ReactECharts 元件
   return (
-    <div style={{ height: '1000px', width: '100%' }}> {/* 調整外框的高度 */}
-      {option ? <ReactECharts option={option} style={{ height: '100%', width: '100%' }} /> : 'Loading...'}
+    <div style={{ height: '1000px', width: '50%' }}> {/* 調整外框的高度 */}
+      {option ? <ReactECharts option={option} style={{ height: '100%', width: '50%' }} /> : 'Loading...'}
     </div>
   );
 };

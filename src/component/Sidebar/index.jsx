@@ -21,11 +21,10 @@ const Sidebar = () => {
 
     return (
         <div>
-            <button onClick={toggleSidebar} className="toggle-button">
-                {isSidebarVisible ? 'Hide Sidebar' : 'Show Sidebar'}
-            </button>
+
             {isSidebarVisible && (
                 <div className="sidebar">
+
                     <h3>列表</h3>
                     <ul>
                         <li><Link to="/ExamplePage">範例</Link></li>
@@ -42,11 +41,15 @@ const Sidebar = () => {
                             )}
                         </li>
                     </ul>
+
                     <div className='backhome'>
                         <Link to="/">回到主畫面</Link>
                     </div>
                 </div>
             )}
+            <button onClick={toggleSidebar} className="toggle-button">
+                {isSidebarVisible ? 'Hide Sidebar' : 'Show Sidebar'}
+            </button>
         </div>
     );
 };

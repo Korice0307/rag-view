@@ -54,15 +54,12 @@ const ExpandableTable = ({ url, handleHoverNode }) => {
 
   const groupedData = organizeData();
 
+  // 根據節點的 value 設定顏色
   const getNodeColor = (node) => {
-    // 你可以根據節點的某些屬性返回顏色，這裡我們假設根據節點名稱來決定顏色
-    if (node.name.includes("Category A")) {
-      return "#FF5733"; // 紅色
-    }
-    if (node.name.includes("Category B")) {
-      return "#33FF57"; // 綠色
-    }
-    return "#3375FF"; // 預設顏色：藍色
+    if (node.value >= 30) return '#ff0000'; // 紅色
+    if (node.value >= 20) return '#ff7f00'; // 橙色
+    if (node.value >= 10) return '#ffff00'; // 黃色
+    return '#00ff00'; // 綠色（預設）
   };
 
   return (
@@ -102,7 +99,7 @@ const ExpandableTable = ({ url, handleHoverNode }) => {
                       <div
                         className="node-color-box"
                         style={{
-                          backgroundColor: getNodeColor(child),
+                          backgroundColor: getNodeColor(child), // 使用 getNodeColor 获取颜色
                           width: "30px", // 設定長方形的寬度
                           height: "20px", // 設定長方形的高度
                           cursor: "pointer",
