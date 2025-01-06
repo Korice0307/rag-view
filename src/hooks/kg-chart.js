@@ -59,8 +59,8 @@ export const useChartObj = (url, titleName) => {
         type: "graph",
         layout: "force",
         force: {
-          repulsion: 1000,
-          edgeLength: [50, 150],
+          repulsion: 500,
+          edgeLength: [50, 100],
         },
         roam: true,
         label: {

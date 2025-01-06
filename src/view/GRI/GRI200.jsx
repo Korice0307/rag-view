@@ -2,6 +2,7 @@ import React from "react";
 import EChartComponent from "../../hooks/ExampleEChart";
 
 function GRI200() {
+    
     return (
         <div>
             GRI200

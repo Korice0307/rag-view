@@ -25,7 +25,7 @@ function GRI300() {
             <ReactECharts
               option={option}
               titleName="GRI300"
-              style={{ height: "1000px", width: "1000px" }}
+              style={{ height: "100%", width: "100%" }}
             />
           ) : (
             <p>Loading chart...</p>
