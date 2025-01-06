@@ -57,7 +57,7 @@ const ExpandableTables = ({ url }) => {
 
   return (
     <div className="tables-container">
-      <h1>Expandable Tables</h1>
+      <h1>GRI300規範</h1>
       {groupedData.map((node) => (
         <div key={node.name}>
           <div className="category-header" onClick={() => toggleNode(node.name)}>
@@ -72,10 +72,10 @@ const ExpandableTables = ({ url }) => {
             <table className="esg-table">
               <thead>
                 <tr>
-                  <th>子節點名稱</th>
+                  <th>{node.name}子項目</th>
                   <th>描述</th>
-                  <th>連線關係</th>
-                  <th>Value</th>
+                  <th>AI</th>
+                  <th>AI評分</th>
                 </tr>
               </thead>
               <tbody>

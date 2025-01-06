@@ -4,12 +4,23 @@ import ReactECharts from "echarts-for-react"
 import ExpandableTable from "../../component/ExpandableTable"
 
 function GRI300() {
-    const { option } = useChartObj("http://140.119.164.71:1880/kg_test2");
 
+    const url = "http://140.119.164.71:1880/kg_test4";
+    const { option } = useChartObj(url);
+    console.log("ECharts option:", option);
     return (
         <div>
-            <ExpandableTable url="http://140.119.164.71:1880/kg_test2" />
-            <ReactECharts option={option} titleName="GRI300" style={{ height: 600, width: "100%" }} />;
+            <ExpandableTable url={url} />
+
+            {option ? (
+                <ReactECharts
+                    option={option}
+                    titleName="GRI300"
+                    style={{ height: 600, width: "100%" }}
+                />
+            ) : (
+                <p>Loading chart...</p>
+            )}
         </div>
     );
 }
