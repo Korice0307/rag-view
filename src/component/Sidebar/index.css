@@ -1,14 +1,16 @@
 /* Sidebar styles */
 .sidebar {
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 240px;
+  flex-direction: column;  /* 保持從上到下排列 */
+  justify-content: flex-start; /* 保證內容從上方開始排列 */
+  width: 180px;
   background-color: #f5f8f9; /* 更柔和的背景色，符合清新自然風格 */
   padding: 20px;
   border-right: 3px solid #d1d1d1; /* 更細的右側邊框，簡潔 */
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* 添加輕微陰影，增強立體感 */
   border-radius: 10px; /* 圓角 */
+  height: 100%; /* 確保sidebar高度占滿頁面 */
 }
 
 /* 標題 */
@@ -23,11 +25,16 @@
 .sidebar ul {
   list-style-type: none;
   padding: 0;
+  width: 100%; /* 確保 ul 填滿 sidebar */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* 確保 ul 內的項目由上而下排列 */
 }
 
 /* 每個項目 */
 .sidebar ul li {
   margin: 15px 0;
+  width: 100%; /* 確保 li 填滿 ul */
 }
 
 /* 連結樣式 */
@@ -62,7 +69,10 @@
 
 /* 按鈕樣式 */
 .toggle-button {
-  background-color: #2ecc71; /* 使用綠色，符合 ESG 視覺 */
+  position: fixed; /* 固定在頁面特定位置 */
+  top: 10px; /* 調整距離頁面頂部的距離 */
+  left: 10px; /* 或調整為你需要的位置，這裡假設在頁面左側 */
+  background-color: #2ecc71;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -71,8 +81,7 @@
   font-weight: 500;
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-bottom: 20px;
-  text-align: center;
+  z-index: 1000; /* 確保它在其他元素之上 */
 }
 
 .toggle-button:hover {

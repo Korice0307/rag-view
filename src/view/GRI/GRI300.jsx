@@ -2,7 +2,7 @@ import React from "react";
 import { useChartObj } from "../../hooks/kg-chart";
 import ReactECharts from "echarts-for-react";
 import ExpandableTable from "../../component/ExpandableTable";
-import "../../index.css"; // 全局样式
+import "../../index.css"
 
 function GRI300() {
   const url = "http://140.119.164.71:1880/kg_test4";
@@ -13,9 +13,9 @@ function GRI300() {
       <div className="content">
         {/* 左侧表格 */}
         <div className="table-container">
-          <ExpandableTable url={url} 
-          handleHoverNode={handleHoverNode}
-          style={{ width: "100%" }} 
+          <ExpandableTable url={url}
+            handleHoverNode={handleHoverNode}
+            style={{ width: "100%" }}
           />
         </div>
 

@@ -1,0 +1,128 @@
+.page-container {
+  margin-top: 70px;
+  /* 与 header 的高度匹配 */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+  /* 减去 header 高度 */
+  overflow: auto;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  /* 填充父容器剩餘空間 */
+  gap: 20px;
+  min-width: 800px;
+  overflow: auto;
+}
+
+.vertical-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+  width: 100%;
+}
+
+.table-container {
+  margin-left: 5px;
+  flex: 0 0 45%;
+  /* 固定寬度為 45% */
+  width: 45%;
+  /* 確保寬度固定 */
+  box-sizing: border-box;
+  /* 計算寬度時包括 padding 和 border */
+  overflow: visible;
+  /* 允許內容展開，不限制滾動 */
+}
+
+.split-item {
+  flex: 1;
+  /* 平分剩餘空間 */
+  min-width: 0;
+  /* 防止內容超出 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 新增圖表容器的樣式 */
+.chart-container {
+  margin-top: 1%;
+  flex: 1;
+  /* 平分剩餘空間 */
+  border: 2px solid #87cefa;
+  /* 添加淺藍色邊框 */
+  border-radius: 8px;
+  /* 圓角邊框 */
+  padding: 10px;
+  /* 添加內間距，避免圖表貼邊 */
+  box-sizing: border-box;
+  /* 計算寬度時包括 padding 和 border */
+  background-color: #fff;
+  /* 可選：背景顏色 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* 可選：增加陰影效果 */
+}
+
+/* 新增此業可使用的容器樣式 */
+.usage-container {
+  background-color: #f9f9f9;
+  border: 2px solid #87cefa;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.usage-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.usage-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.usage-container .usage-item {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.usage-container .usage-item-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #87cefa;
+}
+
+.usage-container .usage-item-text {
+  font-size: 16px;
+  color: #555;
+}
+
+/* 如果需要加強響應式設計，可添加針對小屏幕的樣式 */
+@media (max-width: 768px) {
+  .usage-container {
+    padding: 15px;
+  }
+
+  .usage-container h2 {
+    font-size: 20px;
+  }
+
+  .usage-container p {
+    font-size: 14px;
+  }
+}

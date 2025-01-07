@@ -1,34 +1,42 @@
-import React from "react";
-import './index.css'
+import React, { useEffect, useState } from 'react';
+import "./index.css";
 
-function TableComponent({ data }) {
+const TableComponent = () => {
+  const [data, setData] = useState([]);
 
+  // 讀取 JSON 資料
+  useEffect(() => {
+    fetch('/index.json')
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error("無法讀取資料:", error));
+  }, []);
+
+  console.log(data,setData)
   return (
-    <table border="1">
-      <thead>
-        <tr>
-          <th>名稱</th>
-          <th>佐證資料</th>
-          <th>智慧圖譜</th>
-          <th>AI 合規完成度</th>
-          <th>AI 評分說明</th>
-          <th>參考資料</th>
-        </tr>
-      </thead>
-      <tbody>
-        {data.map((item) => (
-          <tr key={item.name}>
-            <td>{item.name}</td>
-            <td>{item.data}</td>
-            <td>{item.kg}</td>
-            <td>{item.aiResponse}</td>
-            <td>{item.aiScore}</td>
-            <td>{item.references}</td>
+    <div className="table-container">
+      <table className="esg-table">
+        <thead>
+          <tr>
+            <th>ESG永續規範</th>
+            <th>GRI和規系統</th>
+            <th>SASB和規系統</th>
+            <th>是否上傳</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {data.map((row, index) => (
+            <tr key={index}>
+              <td>{row.esg}</td>
+              <td>{row.gri}</td>
+              <td>{row.sasb}</td>
+              <td>{row.uploaded}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
-}
+};
 
 export default TableComponent;

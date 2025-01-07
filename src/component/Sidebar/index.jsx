@@ -27,7 +27,7 @@ const Sidebar = () => {
 
                     <h3>列表</h3>
                     <ul>
-                        <li><Link to="/ExamplePage">範例</Link></li>
+                        <li><Link to="/ExamplePage">首頁</Link></li>
                         <li>
                             <div onClick={toggleDropdown200}>
                                 GRI
@@ -40,17 +40,15 @@ const Sidebar = () => {
                                 </ul>
                             )}
                         </li>
-                    </ul>
 
-                    <div className='backhome'>
-                        <Link to="/">回到主畫面</Link>
-                    </div>
+                    </ul>
                 </div>
             )}
             <button onClick={toggleSidebar} className="toggle-button">
-                {isSidebarVisible ? 'Hide Sidebar' : 'Show Sidebar'}
+                {isSidebarVisible ? '▶' : '◀'}
             </button>
         </div>
+        
     );
 };
 
