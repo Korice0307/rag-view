@@ -1,0 +1,92 @@
+[
+    {
+      "GRI200": "GRI 201: 經濟表現",
+      "compliant": "是",
+      "non_compliant": {
+        "options": [
+          {
+            "sub_indicator": "GRI 201-1: 直接經濟價值生成和分配",
+            "status": "合規"
+          },
+          {
+            "sub_indicator": "GRI 201-2: 財務影響的風險和機會",
+            "status": "不合規"
+          }
+        ]
+      },
+      "improvement_method": "組織應該定期評估並報告其經濟表現，包括收入、利潤、稅收等，並確保透明度。"
+    },
+    {
+      "GRI200": "GRI 202: 市場表現",
+      "compliant": "是",
+      "non_compliant": {
+        "options": [
+          {
+            "sub_indicator": "GRI 202-1: 促進本地就業",
+            "status": "合規"
+          },
+          {
+            "sub_indicator": "GRI 202-2: 支持本地市場的增長",
+            "status": "合規"
+          }
+        ]
+      },
+      "improvement_method": "報告組織如何創造就業機會，並促進地方市場的增長，支持本地企業發展。"
+    },
+    {
+      "GRI200": "GRI 203: 影響與投資",
+      "compliant": "否",
+      "non_compliant": {
+        "options": [
+          {
+            "sub_indicator": "GRI 203-1: 基礎設施投資",
+            "status": "不合規"
+          },
+          {
+            "sub_indicator": "GRI 203-2: 社會貢獻",
+            "status": "不合規"
+          }
+        ]
+      },
+      "improvement_method": "組織應加強對間接經濟影響的報告，特別是如何促進地方基礎設施建設及社會發展。"
+    },
+    {
+      "GRI200": "GRI 204: 採購實踐",
+      "compliant": "是",
+      "non_compliant": {
+        "options": [
+          {
+            "sub_indicator": "GRI 204-1: 支持當地供應商",
+            "status": "合規"
+          },
+          {
+            "sub_indicator": "GRI 204-2: 可持續發展供應商選擇",
+            "status": "合規"
+          }
+        ]
+      },
+      "improvement_method": "組織應該在採購過程中選擇當地及可持續發展的供應商，並透明地披露採購來源。"
+    },
+    {
+      "GRI200": "GRI 205: 反貪腐",
+      "compliant": "是",
+      "non_compliant": {
+        "options": [
+          {
+            "sub_indicator": "GRI 205-1: 反貪腐政策",
+            "status": "合規"
+          },
+          {
+            "sub_indicator": "GRI 205-2: 反貪腐培訓",
+            "status": "合規"
+          },
+          {
+            "sub_indicator": "GRI 205-3: 反貪腐案例",
+            "status": "不合規"
+          }
+        ]
+      },
+      "improvement_method": "組織應加強內部的反貪腐政策，並確保所有員工都參與反貪腐培訓，防止貪污行為。"
+    }
+  ]
+  

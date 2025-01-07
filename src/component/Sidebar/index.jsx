@@ -6,6 +6,7 @@ const Sidebar = () => {
     const [isSidebarVisible, setIsSidebarVisible] = useState(true);
     const [open200, setOpen200] = useState(false);
     const [open300, setOpen300] = useState(false);
+    const [openISO, setOpenISO] = useState(false); // 新增 ISO 下拉選單的狀態
 
     const toggleSidebar = () => {
         setIsSidebarVisible(!isSidebarVisible);
@@ -19,12 +20,14 @@ const Sidebar = () => {
         setOpen300(!open300);
     };
 
+    const toggleDropdownISO = () => {
+        setOpenISO(!openISO); // 切換 ISO 下拉選單
+    };
+
     return (
         <div>
-
             {isSidebarVisible && (
                 <div className="sidebar">
-
                     <h3>列表</h3>
                     <ul>
                         <li><Link to="/ExamplePage">首頁</Link></li>
@@ -40,7 +43,18 @@ const Sidebar = () => {
                                 </ul>
                             )}
                         </li>
-
+                        <li>
+                            <div onClick={toggleDropdownISO}>
+                                ISO
+                            </div>
+                            {openISO && (
+                                <ul className="dropdown">
+                                    <li><Link to="/ISO-14064">ISO-14064</Link></li>
+                                    <li><Link to="/ISO-14067">ISO-14067</Link></li>
+                                    <li><Link to="/ISO-27001">ISO-27001</Link></li>
+                                </ul>
+                            )}
+                        </li>
                     </ul>
                 </div>
             )}
@@ -48,7 +62,6 @@ const Sidebar = () => {
                 {isSidebarVisible ? '▶' : '◀'}
             </button>
         </div>
-        
     );
 };
 

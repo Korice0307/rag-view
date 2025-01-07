@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-.table-container {
+.ExpandableTable-container {
   margin-left: 5px;
   flex: 0 0 45%;
   /* 固定寬度為 45% */
@@ -68,61 +68,4 @@
   /* 可選：背景顏色 */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   /* 可選：增加陰影效果 */
-}
-
-/* 新增此業可使用的容器樣式 */
-.usage-container {
-  background-color: #f9f9f9;
-  border: 2px solid #87cefa;
-  border-radius: 8px;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-
-.usage-container h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.usage-container p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
-}
-
-.usage-container .usage-item {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #555;
-  display: flex;
-  align-items: center;
-}
-
-.usage-container .usage-item-icon {
-  margin-right: 10px;
-  font-size: 20px;
-  color: #87cefa;
-}
-
-.usage-container .usage-item-text {
-  font-size: 16px;
-  color: #555;
-}
-
-/* 如果需要加強響應式設計，可添加針對小屏幕的樣式 */
-@media (max-width: 768px) {
-  .usage-container {
-    padding: 15px;
-  }
-
-  .usage-container h2 {
-    font-size: 20px;
-  }
-
-  .usage-container p {
-    font-size: 14px;
-  }
 }

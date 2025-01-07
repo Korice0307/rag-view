@@ -12,7 +12,7 @@ function GRI300() {
     <div className="page-container">
       <div className="content">
         {/* 左侧表格 */}
-        <div className="table-container">
+        <div className="ExpandableTable-container">
           <ExpandableTable url={url}
             handleHoverNode={handleHoverNode}
             style={{ width: "100%" }}

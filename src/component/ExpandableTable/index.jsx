@@ -81,7 +81,6 @@ const ExpandableTable = ({ url, handleHoverNode }) => {
               <thead>
                 <tr>
                   <th>{node.name}子項目</th>
-                  <th>資料上傳</th>
                   <th>描述</th>
                   <th>知識圖譜座標</th>
                   <th>AI</th>
@@ -92,7 +91,6 @@ const ExpandableTable = ({ url, handleHoverNode }) => {
                 {node.children.map((child) => (
                   <tr key={child.name}>
                     <td>{child.name}</td>
-                    <td>{child.airesponse}</td>
                     <td>{child.category}</td>
                     <td>
                       {/* 在這裡顯示長方形顏色 */}
