@@ -53,19 +53,15 @@
 
 /* 新增圖表容器的樣式 */
 .chart-container {
+  position: sticky; /* 使图表悬停 */
+  top: 10px; /* 距离页面顶部 10px */
   margin-top: 1%;
   flex: 1;
-  /* 平分剩餘空間 */
   border: 2px solid #87cefa;
-  /* 添加淺藍色邊框 */
   border-radius: 8px;
-  /* 圓角邊框 */
   padding: 10px;
-  /* 添加內間距，避免圖表貼邊 */
   box-sizing: border-box;
-  /* 計算寬度時包括 padding 和 border */
   background-color: #fff;
-  /* 可選：背景顏色 */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  /* 可選：增加陰影效果 */
 }
+
